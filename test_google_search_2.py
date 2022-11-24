@@ -8,4 +8,4 @@ def test_search_text(browser_open):
 
 def test_search_text_negative(browser_open):
     browser.element('[name=q]').should(be.blank).type("zgfdgdsgsg").press_enter()
-    browser.element('[id=search]').should(have.text('abrakadabra'))
+    browser.element('[id=search]').should(have.text(''))
